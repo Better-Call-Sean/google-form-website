@@ -12,9 +12,9 @@ header {
     background-size: cover;/* 确保背景图片覆盖整个 header 区域 */
     background-position: center; /* 图片在 header 区域居中 */
     background-repeat: no-repeat; /* 防止背景图片重复 */
-    color: white;
+    color: black;/* 将字体颜色设置为黑色 */
     text-align: center;
-    padding: 40px;/* 增加 padding 以使内容与边界有间隔 */
+    padding: 60px;/* 增加 padding 以使内容与边界有间隔 */
 }
 
 .header-content {
@@ -25,7 +25,7 @@ header {
     max-width: 80%; /* 限制背景颜色的最大宽度（可选） */
     margin: 0 auto; /* 使背景居中显示（可选） */
     overflow: hidden; /* 清除浮动影响，确保容器高度包含浮动元素 */
-    text-align: left; /* 确保内容靠左对齐 */
+    text-align: center; /* 确保内容靠左对齐 */
 }
 
 .profile-pic {
@@ -39,8 +39,14 @@ header {
 }
 
 .title {
-    font-size: 2em;
+    font-size: 2.5em; /* 增大字体 */
     margin-top: 10px;
+    text-align: center; /* 置中标题 */
+}
+
+/* 联系方式样式 */
+.contact-info {
+    text-align: right; /* 联系方式齐头靠右 */
 }
 
 /* Description 部分 */
