@@ -98,6 +98,7 @@ input[type="text"] {
     width: calc(100% - 22px);
     padding: 10px;
     margin-top: 5px;
+    background-color: #F5F5DC; /* 设置背景颜色与表单区域一致 */
     border: none; /* 去掉边框 */
     border-bottom: 2px solid #ccc; /* 添加底部边线 */
     border-radius: 0;
