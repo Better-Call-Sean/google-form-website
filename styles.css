@@ -60,8 +60,14 @@ input[type="text"] {
     width: calc(100% - 22px);
     padding: 10px;
     margin-top: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    border: none; /* 去掉边框 */
+    border-bottom: 2px solid #ccc; /* 添加底部边线 */
+    border-radius: 0;
+}
+
+input[type="text"]:focus {
+    border-bottom: 2px solid #007bff; /* 聚焦时底部边线变色 */
+    outline: none; /* 去掉默认聚焦轮廓 */
 }
 
 button {
