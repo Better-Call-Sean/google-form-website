@@ -8,7 +8,7 @@ body {
 
 /* Header 部分 */
 header {
-    background-image: url('background-image.jpg'); /* 背景图片 */
+    background-image: url('skyline.jpg'); /* 背景图片 */
     background-size: cover;
     color: white;
     text-align: center;
