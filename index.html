@@ -8,9 +8,10 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PGHTCZKK');</script>
     <!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google 表單嵌入頁面</title>
+    <title>房型需求表格</title>
+    <link rel="stylesheet" href="styles.css">
  <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -30,11 +31,66 @@
     <!-- End Meta Pixel Code -->
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGHTCZKK"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <h1>Google 表單</h1>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSedxKLefbGBLkrk0QtS5wsEv9odNWxefts10CHXs1Y9O9iYLQ/viewform?embedded=true" width="640" height="1683" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
+ <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="your-profile-picture.jpg" alt="大頭貼" class="profile-pic">
+            <h1 class="title">房型需求</h1>
+        </div>
+    </header>
+
+    <!-- Description Section -->
+    <section class="description">
+        <p>我將會透過以下資訊篩選適合您的房型，節省您的時間。填寫的越詳細，越可能找到適合您的房型~</p>
+        <p>電話：0970724831</p>
+        <p>LINE ID：08wu7</p>
+        <p>FB：笑談房市Better Call Sean</p>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <form id="contactForm">
+            <label for="region">區域：</label>
+            <input type="text" id="region" name="region" required>
+            
+            <label for="budget">預算：</label>
+            <input type="text" id="budget" name="budget" required>
+            
+            <label for="roomType">房型(EX.2房2廳2衛)：</label>
+            <input type="text" id="roomType" name="roomType" required>
+            
+            <label for="buildingAge">屋齡：</label>
+            <input type="text" id="buildingAge" name="buildingAge" required>
+            
+            <label for="orientation">朝向：</label>
+            <input type="text" id="orientation" name="orientation" required>
+            
+            <label for="floor">樓層：</label>
+            <input type="text" id="floor" name="floor" required>
+            
+            <label for="parking">車位：</label>
+            <input type="text" id="parking" name="parking" required>
+            
+            <label for="name">如何稱呼您：</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="birthYear">出生民國年分：</label>
+            <input type="text" id="birthYear" name="birthYear" required>
+            
+            <label for="contact">聯絡方式(電話、LINE ID、FB、IG等皆可)：</label>
+            <input type="text" id="contact" name="contact" required>
+            
+            <button type="submit">提交</button>
+        </form>
+    </section>
+
+    <!-- Thank You Section -->
+    <section id="thankYou" class="hidden">
+        <div class="thank-you-message">
+            <p>感謝您的填寫，我會盡快為您篩選並回覆您~</p>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
