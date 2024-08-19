@@ -1,17 +1,14 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // 防止表单实际提交
-
-    // 获取表单数据
-    const formData = new FormData(event.target);
-    const data = {};
-    formData.forEach((value, key) => {
-        data[key] = value;
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // 阻止表单的默认提交行为
+        // 提交表单
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+        }).then(() => {
+            // 重定向到自定义的感谢页面
+            window.location.href = 'thank-you.html';
+        });
     });
-
-    // 在这里处理数据，比如发送到服务器（示例代码，实际应用中需要使用 AJAX 或 Fetch API）
-    console.log('表单数据:', data);
-
-    // 隐藏表单部分，显示感谢页面
-    document.querySelector('.form-section').classList.add('hidden');
-    document.getElementById('thankYou').classList.remove('hidden');
 });
