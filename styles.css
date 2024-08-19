@@ -14,11 +14,11 @@ header {
     background-repeat: no-repeat; /* 防止背景图片重复 */
     color: black;/* 将字体颜色设置为黑色 */
     text-align: center;
-    padding: 60px;/* 增加 padding 以使内容与边界有间隔 */
+    padding: 80px;/* 增加 padding 以使内容与边界有间隔 */
 }
 
 .header-content {
-    background-color: rgba(255, 255, 255, 0.3); /* 白色背景，透明度 30% */
+    background-color: rgba(255, 255, 255, 0.8); /* 白色背景，透明度 30% */
     padding: 20px;
     border-radius: 10px; /* 圆角边框（可选） */
     display: inline-block; /* 使背景颜色仅包裹文本 */
@@ -29,7 +29,7 @@ header {
 }
 
 .profile-pic {
-    float: left; /* 使头像靠左对齐 */
+    float: center; /* 使头像靠中对齐 */
     width: 120px; /* 设置固定宽度 */
     height: 120px; /* 设置固定高度 */
     border-radius: 50%; /* 圆形头像 */
@@ -46,7 +46,8 @@ header {
 
 /* 联系方式样式 */
 .contact-info {
-    text-align: right; /* 联系方式齐头靠右 */
+    text-align: left; /* 联系方式齐头靠右 */
+    font-weight: bold; /* 字体变粗 */
 }
 
 /* Description 部分 */
