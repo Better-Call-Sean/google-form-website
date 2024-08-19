@@ -9,13 +9,21 @@ body {
 /* Header 部分 */
 header {
     background-image: url('skyline.jpg'); /* 背景图片 */
-    background-size: cover;
+    background-size: cover;/* 确保背景图片覆盖整个 header 区域 */
+    background-position: center; /* 图片在 header 区域居中 */
+    background-repeat: no-repeat; /* 防止背景图片重复 */
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 40px;/* 增加 padding 以使内容与边界有间隔 */
 }
 
 .header-content {
+    background-color: rgba(255, 255, 255, 0.3); /* 白色背景，透明度 30% */
+    padding: 20px;
+    border-radius: 10px; /* 圆角边框（可选） */
+    display: inline-block; /* 使背景颜色仅包裹文本 */
+    max-width: 80%; /* 限制背景颜色的最大宽度（可选） */
+    margin: 0 auto; /* 使背景居中显示（可选） */
     overflow: hidden; /* 清除浮动影响，确保容器高度包含浮动元素 */
     text-align: left; /* 确保内容靠左对齐 */
 }
