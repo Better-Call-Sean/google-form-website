@@ -29,15 +29,17 @@ header {
 }
 
 .profile-pic {
+    display: block;
+    margin: 0 auto 20px auto; /* 头像居中并与下方内容有间距 */
     float: center; /* 使头像靠中对齐 */
     width: 120px; /* 设置固定宽度 */
     height: 120px; /* 设置固定高度 */
     border-radius: 50%; /* 圆形头像 */
     object-fit: cover; /* 保持图片比例并裁剪超出部分 */
     border: 2px solid #ddd; /* 设置边框（可选） */
-    margin-right: 20px; /* 添加右边距，以便文字与头像之间有间隔 */
 }
 
+/* 房型需求标题样式 */
 .title {
     font-size: 2.5em; /* 增大字体 */
     margin-top: 10px;
@@ -58,11 +60,12 @@ header {
 
 /* Form 部分 */
 .form-section {
-    background-color: #FFE4E1; /* 浅肤色背景 */
+    background-color: #F5F5DC; /* 浅肤色背景 */
+    border: 2px solid #F5F5DC; /* 边框颜色与背景颜色相同 */
     padding: 20px;
     border-radius: 10px; /* 圆角边框 */
     margin: 20px auto; /* 在页面中居中显示 */
-    max-width: 80%; /* 限制表单部分的最大宽度 */
+    max-width: 600px; /* 限制表单部分的最大宽度 */
     text-align: left; /* 文本靠左对齐 */
 }
 
