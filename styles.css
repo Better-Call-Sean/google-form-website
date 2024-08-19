@@ -38,6 +38,13 @@ header {
     text-align: center;
 }
 
+.form-title {
+    font-size: 1.5em; /* 调整标题大小 */
+    margin-bottom: 20px; /* 增加标题下方的间距 */
+    font-weight: bold;
+    color: #333; /* 调整标题颜色 */
+}
+    
 form {
     display: inline-block;
     max-width: 600px;
@@ -85,6 +92,12 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Required标记样式 */
+.required {
+    color: red; /* 设置必填标记颜色为红色 */
+    font-size: 1em; /* 设置字体大小 */
+}
+    
 /* Thank You 部分 */
 .thank-you-message {
     padding: 20px;
