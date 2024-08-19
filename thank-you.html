@@ -26,6 +26,7 @@
             text-align: center; /* 内容居中 */
             max-width: 600px; /* 最大宽度 */
             width: 100%; /* 宽度自适应 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 添加阴影 */
         }
 
         /* 大标题的样式 */
@@ -39,6 +40,35 @@
         .thank-you-message {
             font-size: 1.2em; /* 信息字体大小 */
             color: #555; /* 字体颜色 */
+            margin-bottom: 20px; /* 信息下方间距 */
+        }
+
+                /* 按钮样式 */
+        .thank-you-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #FFFFFF;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .thank-you-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 600px) {
+            .thank-you-title {
+                font-size: 2em; /* 小屏幕上标题字体大小调整 */
+            }
+
+            .thank-you-message {
+                font-size: 1em; /* 小屏幕上信息字体大小调整 */
+            }
         }
     </style>
 </head>
@@ -48,6 +78,8 @@
         <div class="thank-you-message">
             感謝您的填寫，我會盡快為您篩選並回覆您~
         </div>
+         <!-- 添加返回主页按钮 -->
+        <a href="/" class="thank-you-button">返回主页</a>
     </div>
 </body>
 </html>
