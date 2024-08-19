@@ -15,10 +15,19 @@ header {
     padding: 20px;
 }
 
+.header-content {
+    overflow: hidden; /* 清除浮动影响，确保容器高度包含浮动元素 */
+    text-align: left; /* 确保内容靠左对齐 */
+}
+
 .profile-pic {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    float: left; /* 使头像靠左对齐 */
+    width: 150px; /* 设置固定宽度 */
+    height: 150px; /* 设置固定高度 */
+    border-radius: 50%; /* 圆形头像 */
+    object-fit: cover; /* 保持图片比例并裁剪超出部分 */
+    border: 2px solid #ddd; /* 设置边框（可选） */
+    margin-right: 20px; /* 添加右边距，以便文字与头像之间有间隔 */
 }
 
 .title {
