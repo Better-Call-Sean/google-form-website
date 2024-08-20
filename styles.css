@@ -18,11 +18,11 @@ header {
 }
 
 .header-content {
-    background-color: rgba(255, 255, 255, 0.8); /* 白色背景，透明度 30% */
+    background-color: rgba(255, 255, 255, 0.8); /* 白色背景，透明度 80% */
     padding: 20px;
     border-radius: 10px; /* 圆角边框（可选） */
     display: inline-block; /* 使背景颜色仅包裹文本 */
-    max-width: 80%; /* 限制背景颜色的最大宽度（可选） */
+    max-width: 100%; /* 限制背景颜色的最大宽度（可选） */
     margin: 0 auto; /* 使背景居中显示（可选） */
     overflow: hidden; /* 清除浮动影响，确保容器高度包含浮动元素 */
     text-align: center; /* 确保内容靠中对齐 */
