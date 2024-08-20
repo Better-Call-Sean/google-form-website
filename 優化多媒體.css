@@ -1,0 +1,4 @@
+<img src="image-small.jpg" 
+     srcset="image-small.jpg 600w, image-medium.jpg 1024w, image-large.jpg 1920w" 
+     sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 60vw" 
+     alt="描述">
