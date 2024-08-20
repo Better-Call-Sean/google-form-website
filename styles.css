@@ -94,6 +94,14 @@ label {
     text-align: left;
 }
 
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    width: 100%; /* 确保在所有设备上填满宽度 */
+    box-sizing: border-box; /* 确保内边距不会影响元素总宽度 */
+}
+
 input[type="text"] {
     width: calc(100% - 22px);
     padding: 10px;
