@@ -119,7 +119,7 @@ input[type="text"]:focus {
 
 input::placeholder {
     color: #999; /* 设置占位符的颜色 */
-    border-bottom: 1px dashed #999; /* 设置虚线 */
+    font-size: 20px; /* 设置占位符的字体大小 */
 }
 
 button {
