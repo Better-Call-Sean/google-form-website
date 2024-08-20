@@ -19,6 +19,10 @@
     margin: 0; /* 移除外边距 */
     padding: 0; /* 移除内边距 */
     }
+    input {
+        font-size: 14px; /* 在手机上稍微调整字体大小 */
+        padding: 8px; /* 在手机上增加一点内边距 */
+    }
     .thank-you-message {
         padding: 10px;
         font-size: 16px;
