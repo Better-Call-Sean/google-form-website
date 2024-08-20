@@ -10,7 +10,8 @@
     }
     .form-section form {
         width: 100%;
-        padding: 10px;
+        padding-right: 10px;/* 为了不影响右侧内容，可以加点内边距 */
+        margin-left: -10px; /* 将表格向左移动10px */
     }
     .profile-pic {
     width: 100%; /* 确保图片宽度填满整个屏幕 */
