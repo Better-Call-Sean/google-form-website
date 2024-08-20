@@ -4,6 +4,7 @@
         font-size: 14px;
     }
     .header-content {
+        font-size: 24px; /* 调整到适合手机屏幕的大小 */
         flex-direction: column;
         align-items: center;
     }
@@ -56,3 +57,9 @@
     flex-direction: column;
     width: 100%; /* 默认宽度为 100%，在媒体查询中可以调整 */
 }
+
+/* 優化多媒體 */
+<img src="image-small.jpg" 
+     srcset="image-small.jpg 600w, image-medium.jpg 1024w, image-large.jpg 1920w" 
+     sizes="(max-width: 600px) 100vw, (max-width: 1024px) 80vw, 60vw" 
+     alt="描述">
