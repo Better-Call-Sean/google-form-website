@@ -109,6 +109,11 @@ input[type="text"]:focus {
     outline: none; /* 去掉默认聚焦轮廓 */
 }
 
+input::placeholder {
+    color: #999; /* 设置占位符的颜色 */
+    border-bottom: 1px dashed #999; /* 设置虚线 */
+}
+
 button {
     margin-top: 20px;
     padding: 10px 20px;
