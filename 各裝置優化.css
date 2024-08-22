@@ -2,6 +2,8 @@
 @media only screen and (max-width: 600px) {
     body {
         font-size: 14px;
+        background-size: cover; /* 背景图覆盖整个容器 */
+        background-position: center; /* 保持背景图居中 */
     }
     .header-content {
         padding: 10px;
